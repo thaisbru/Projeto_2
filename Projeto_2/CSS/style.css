@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.apartment {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+.room {
+    position: absolute;
+    background-color: #b3e0ff;
+    border: 2px solid #333;
+    border-radius: 3%;
+}
+
+#sala {
+    width: 300px;
+    height: 200px;
+    top: 50px;
+    left: 50px;
+}
+
+#cozinha {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    left: 400px;
+}
+
+#quarto1 {
+    width: 160px;
+    height: 150px;
+    top: 250px;
+    left: 50px;
+}
+
+#quarto2 {
+    width: 150px;
+    height: 150px;
+    top: 250px;
+    left: 250px;
+}
+
+#banheiro {
+    width: 150px;
+    height: 150px;
+    top: 250px;
+    left: 400px;
+}
+
+.control-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.control-buttons button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.room {
+    position: absolute;
+    background-color: #b3e0ff;
+    border: 2px solid #333;
+    border-radius: 3%;
+    transition: background-color 0.3s;
+}
+
+.room.switched-on {
+    background-color: #390dfa; /* Cor quando o circuito está ligado */
+}
+
+.control-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.control-buttons button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.apartment {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.room {
+    position: absolute;
+    background-color: #b3e0ff;
+    border: 2px solid #333;
+    border-radius: 3%;
+}
+
+/* Estilos para os botões e controles */
+.control-container {
+    display: flex;
+}
+
+.control-buttons, .circuit-control {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.control-buttons button, .circuit-control button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-buttons button:hover, .circuit-control button:hover {
+    background-color: #45a049;
+}
+
+.circuit-control button.switched-off {
+    background-color: #FF5733;
+}
+
+.circuit-control button.switched-on {
+    background-color: #4CAF50;
+}
+
+.status-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.status {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}

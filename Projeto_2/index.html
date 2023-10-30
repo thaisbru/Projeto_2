@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planta do Apartamento</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="apartment">
+        <div class="room" id="sala">
+            <span>Sala</span>
+        </div>
+        <div class="room" id="cozinha">
+            <span>Cozinha</span>
+        </div>
+        <div class="room" id="quarto1">
+            <span>Quarto 1</span>
+        </div>
+        <div class="room" id="quarto2">
+            <span>Quarto 2</span>
+        </div>
+        <div class="room" id="banheiro">
+            <span>Banheiro</span>
+        </div>
+    </div>
+
+    <div class="control-buttons">
+        <button id="sala-switch" onclick="toggleRoom('sala', 'Sala')">Ligar Luz da Sala</button>
+        <button id="cozinha-switch" onclick="toggleRoom('cozinha', 'Cozinha')">Ligar Luz da Cozinha</button>
+    </div>
+
+    <div class="status">
+        <p>Status:</p>
+        <p id="status-text">Nenhum evento ocorreu ainda.</p>
+    </div>
+
+    <div class="circuit-control">
+        <h2>Controle de Circuitos</h2>
+        <button id="sala-circuit-switch" onclick="toggleCircuit('sala', 'Sala')">Ligar Circuito da Sala</button>
+        <button id="cozinha-circuit-switch" onclick="toggleCircuit('cozinha', 'Cozinha')">Ligar Circuito da Cozinha</button>
+    </div>
+
+    
+    
+
+    
+</body>
+</html>
+
